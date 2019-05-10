@@ -12,6 +12,6 @@ server.use(cors());
 server.use(express.json());
 
 configureRoutes(server);
-server.use("/api/users", userRouter);
+server.use("/users", userRouter);
 
 module.exports = server;
