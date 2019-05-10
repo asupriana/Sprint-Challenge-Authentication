@@ -22,7 +22,7 @@ function register(req, res) {
       res.status(201).json(saved);
     })
     .catch(err => {
-      res.status(500).json(err);
+      res.status(500).json({ err: err.message });
     });
 }
 
